@@ -1,4 +1,4 @@
-# Spotify- Data-Basic-Machine Learning Predictability
+# Bintu- Spotify- Data-Basic-Machine Learning Predictability
 Predictability for Spotify-Data
 
 track_artist/ track_album_name/ playlist_genre/ Predicted_Genre Match
