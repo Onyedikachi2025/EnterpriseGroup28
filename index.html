@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <title>Group 28 Enterprise Project</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <h1>Charts</h1>
+    <canvas id="Charts" width="400" height="200"></canvas>
+    <script>
+        const ctx = document.getElementById('Charts')
 
-    <h1>Data Cleaning <Summary></Summary></h1>
-    <p>Data Cleaning Summary
-What is Data Cleaning?
-Data Cleaning or data scrubbing is the process of identifying and correcting errors and inconsistencies in raw data sets to improve data quality. It involves fixing or removing incorrect, corrupted, duplicate within a dataset. Clean data is essential for effective data management, which helps us based on accurate and reliable information. The Dataset I will be using to data clean will be Spotify music dataset, for the data cleaning summary I will talk about the before and after of the music dataset. This Dataset has two datasheets, one for low popular songs and high popular songs.
-Low popular songs Dataset (before)
-This dataset includes attributes such as time signature, track popularity, loudness, tempo, time durations with other musical information. However, this dataset contains way too much information some which are unnecessary to have, which makes it difficult to analyse and can make the information that you’re looking for hard to find. So, we are only going to be look at the key musical attributes which are track name, track artist, tracks popularity and its genre (which is represented by the playlist name). This will allow us to focus on and have more accurate datasheet information. Starting with the track popularity (which will allow us to correctly order them). The track popularity ranges from 10 to 100, which aren’t ordered properly. While some tracks share the same popularity score, the dataset becomes clearer when the data is sorted from the most popular to the least popular tracks. 
-Data Cleaning:
-No Duplicates were found, no missing values were found, no need to replace. So this datasheet was perfect.
+        new Chart(ctx,  {
+            type: 'bar',
+            data: {
+                labels:
+
+
+            }
+        }
+
+
+
+
+        )
+
+    </script>
 </p>
-
 </body>
 </html>
