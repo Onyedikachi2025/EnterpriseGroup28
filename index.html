@@ -10,21 +10,18 @@
     <h1>Charts</h1>
     <canvas id="Charts" width="400" height="200"></canvas>
     <script>
-        const ctx = document.getElementById('Charts')
+        const ctx = document.getElementById('Charts');
 
         new Chart(ctx,  {
             type: 'bar',
-            data: {
-                labels:
-
-
-            }
+            data: { 
+            labels: ['The Long Road Home', 'The Collection', 'Bella Donna', 'Love,Ella'],
+            datasets: [{
+                label: 'track_popularity',
+                data: ['23', '53', '55', '64'],
+            }] 
         }
-
-
-
-
-        )
+    } );
 
     </script>
 </p>
