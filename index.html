@@ -8,22 +8,37 @@
 </head>
 <body>
     <h1>Charts</h1>
-    <canvas id="Charts" width="400" height="200"></canvas>
+    <canvas id="Charts1" width="500" height="200"></canvas>
     <script>
-        const ctx = document.getElementById('Charts');
+        const ctx1 = document.getElementById('Charts1');
 
-        new Chart(ctx,  {
+        new Chart(ctx1,  {
             type: 'bar',
             data: { 
-            labels: ['The Long Road Home', 'The Collection', 'Bella Donna', 'Love,Ella'],
+            labels: ['The Long Road Home', 'The Collection', 'Bella Donna', 'Love,Ella','Shapes of Rhythm', 'Ultimate Sinatra', 'The Complete Ella', 'B.G in Hi Fi','Quiet Kenny', 'Songs For My Father', 'Boss Tenor', 'Body and Soul', 'Look Out!'],
             datasets: [{
                 label: 'track_popularity',
-                data: ['23', '53', '55', '64'],
+                data: ['23', '53', '55', '64','62','61','60','55','54','53','53','53','52'],
             }] 
         }
     } );
-
     </script>
+    <h2>Charts</h2>
+    <canvas id="chart2" width="50" height="50"></canvas>
+    <script>
+const ctx2 = document.getElementById('chart2');
+new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: [ 'gangster(Rap)', 'trap', 'essential', 'modern', 'hip_hip_latin', 'classic'
+        ],
+        datasets: [{
+            label: 'Popularity by Genre',
+            data: ['812','389','169','312','1045', '3750']
+        }]
+    }
+});
+</script>
 </p>
 </body>
 </html>
