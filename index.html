@@ -2,11 +2,391 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Group 28 Enterprise Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
+<body class="container">
+    <body>
+  <section class="table-wrap">
+      <h2 class="subtitle"> Machine Learning Predicted Spotify Data Table(A0042301- Bintu Sankoh)</h2>
+      
+      <div class="subnote">Spotify Data Predicted Genre Table</div>
+
+      <label for="description">Description:</label>
+      <p class="description">
+        This table contains data and the predicted genre based of Machine Learning 
+        about Spotify tracks, including the track artist, track album, playlist genre, predicted genre, 
+        and whether the predicted genre matches the playlist genre.
+      </p>
+
+      <p>
+        According to the data, there are 40 tracks listed in the table. 
+        The predicted genre matches the playlist genre for 28 tracks, while it does not match for 12 tracks. 
+        This indicates that the machine learning model used for genre prediction has a certain level of accuracy, but there are also instances where it fails to correctly predict the genre based on the playlist genre.
+      </p>
+      <table class="SpotifyData">
+        <thead>
+          <tr>
+            <th>Track Artist</th>
+            <th>Track Album</th>
+            <th>Playlist Genre</th>
+            <th>Predicted Genre</th>
+            <th>Match</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1.Lady Gaga, Bruno Mars</td>
+            <td>Die with a smile</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+          </tr>
+          
+          <tr>
+            <td>2.Billie Elish</td>
+            <td>Hit me hard and soft</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+          </tr>
+          
+          <tr>
+           <td>3.Gracie Abrams</td>
+            <td>The secret of us</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+          </tr>
+          
+          <tr>
+            <td>4.Sabrina Carpenter</td>
+            <td>Short n Sweet</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+        </tr>
+          <td>5.Rosa, Bruno Mars</td>
+          <td>APT</td>
+          <td>Pop</td>
+          <td>Hip-Hop</td>
+          <td>False</td>
+        <tr>
+         <td>6.Chappell Roan</td>
+         <td>Good Luck Babe!</td>
+         <td>pop</td>
+         <td>pop</td>
+         <td>True</td>
+        </tr>
+
+        <tr>
+         <td>7.Addison Rae</td> 
+         <td>Diet Pepsi</td>
+         <td>pop</td>
+         <td>Hip-Hop</td>
+         <td>False</td>
+        </tr>
+
+
+        <tr>
+          <td>8.Billie Elish</td>
+          <td>Hit me hard and soft</td>
+            <td>pop</td>
+            <td>ambient</td>
+            <td>False</td>
+        </tr>
+        
+        <tr>
+          <td>9.Gigi Perez</td>
+          <td>Sailor Song</td>
+          <td>pop</td>
+          <td>ambient</td>
+          <td>False</td>
+        </tr>
+        
+        <tr>
+          <td>10.The Weekend, Playboi Carti</td>
+          <td>Timeless</td>
+          <td>pop</td>
+          <td>pop</td>
+          <td>True</td>
+        </tr>
+
+        <tr>
+          <td>11.Charli xcx, Billie Elish</td>
+          <td>Guess</td>
+          <td>pop</td>
+          <td>hip-hop</td>
+          <td>False</td>
+        </tr>
+
+           <tr>
+          <td>12.Sabrina Carpenter</td>
+          <td>Please Please Please</td>
+          <td>pop</td>
+          <td>pop</td>
+          <td>True</td>
+         </tr>
+
+         <tr>
+          <td>13.Tate McRae</td>
+          <td>2 hands</td>
+          <td>pop</td>
+          <td>pop</td>
+          <td>True</td>
+          </tr>
+            
+          <tr>
+            <td>14.Shaboozey</td>
+            <td>A Bar Song(Tipsy)</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+          </tr>
+
+          <tr>
+            <td>15.Chappell Roan</td>
+            <td>The Rise and Fall of a Midwest Princess</td>
+            <td>pop</td>
+            <td>pop</td>
+            <td>True</td>
+            </tr>
+
+            <tr>
+              <td>16.Lady Gaga</td>
+              <td>Disease</td>
+              <td>pop</td>
+              <td>pop</td>
+              <td>True</td>
+            </tr>
+
+            <tr>
+              <td>17.LISA</td>
+              <td>Moonlit Floor(Kiss Me)</td>
+              <td>pop</td>
+              <td>pop</td>
+              <td>True</td>
+            </tr>
+            
+             <tr>
+              <td>18.Morgan Wallen</td>
+              <td>Love Somebody</td>
+              <td>pop</td>
+              <td>pop</td>
+              <td>True</td>
+             </tr>
+
+             <tr>
+              <td>19.Gracie Abrams</td>
+              <td>The Secret of Us</td>
+              <td>pop</td>
+              <td>pop</td>
+              <td>True</td>
+             </tr>
+
+             <tr>
+              <td>20.Adam Port, Stryv, Keinemusik,Orso</td>
+              <td>Move</td>
+              <td>pop</td>
+              <td>electronic</td>
+              <td>False</td>
+
+              <tr>
+                <td>21.Tyler the Creator, Glorilla,Sexyy Red</td>
+                <td>CHROMAKOPIA</td>
+                <td>pop</td>
+                <td>rock</td>
+                <td>False</td>
+              </tr>
+
+
+              <tr>
+                <td>22.Sabrina Carpenter</td>
+                <td>Expresso</td>
+                <td>pop</td>
+                <td>pop</td>
+                <td>True</td>
+              </tr>
+
+              <tr>
+                <td>23.JENNIE</td>
+                <td>Mantra</td>
+                <td>pop</td>
+                <td>hip-hop</td>
+                <td>False</td>
+              </tr>
+
+              <tr>
+                <td>24.Rauw Alejandro, Bad Bunny</td>
+                <td>Cosa Nuestrsa</td>
+                <td>pop</td>
+                <td>hip-hop</td>
+                 <td>False</td>
+              </tr>
+
+              <tr> 
+                <td>25.Don Toliver</td>
+                <td>HARDSTONE PSYCHO</td>
+                <td>pop</td>
+                <td>pop</td>
+                 <td>True</td>
+              </tr>
+
+              <tr>
+                <td>26.Post-Malone</td>
+                <td>I had Some Help</td>
+                <td>pop</td>
+                <td>pop</td>
+                 <td>True</td>
+                 </tr>
+
+                 <tr> 
+                  <td>27.Hozier</td>
+                  <td>Unheard</td>
+                  <td>pop</td>
+                  <td>pop</td>
+                   <td>True</td>
+                 </tr>
+
+                 <tr>
+                  <td>28.The Mara-as </td>
+                  <td>Submarine</td>
+                  <td>pop</td>
+                  <td>pop</td>
+                   <td>True</td>
+                 </tr>
+
+                 <tr>
+                  <td>29.Oscar Maydon, Fureza Regida</td>
+                  <td>Tu Boda</td>
+                  <td>pop</td>
+                  <td>pop</td>
+                   <td>True</td>
+                 </tr>
+
+                  <tr>
+                    <td>30.Myles Smith</td>
+                    <td>Stargazing</td>
+                    <td>pop</td>
+                    <td>pop</td>
+                     <td>True</td>
+                     </tr>
+
+                     <tr>
+                      <td>31.Glorilla, Sexyy Red</td>
+                      <td>WHATCHU KNO ABOUT ME</td>
+                      <td>pop</td>
+                      <td>Hip-hop</td>
+                       <td>False</td>
+                     </tr>
+
+                      <tr>
+                        <td>32.Ariana Grande</td>
+                        <td>eternal sunshine</td>
+                        <td>pop</td>
+                        <td>pop</td>
+                         <td>True</td>
+                      </tr>
+
+                       <tr>
+                        <td>33.Benson Boone</td>
+                        <td>Beautiful Things</td>
+                        <td>pop</td>
+                        <td>pop</td>
+                         <td>True</td>
+                      </tr>
+
+                       <tr>
+                        <td>34.Myke Towers,benny blanco</td>
+                        <td>LA PANTERA NEGRA (Deluxe)</td>
+                        <td>pop</td>
+                        <td>gaming</td>
+                         <td>False</td>
+                      </tr>
+
+                       <tr>
+                        <td>35.KATSEYE</td>
+                        <td>Touch</td>
+                        <td>pop</td>
+                        <td>gaming</td>
+                         <td>False</td>
+                      </tr>
+
+                       <tr> 
+                        <td>36.Teddy Swims</td>
+                        <td>I've tried everything but Therapy</td>
+                        <td>pop</td>
+                        <td>pop</td>
+                         <td>True</td>
+                      </tr>
+
+                       <tr>
+                        <td>Mark Ambor</td>
+                        <td>Belong Together</td>
+                        <td>pop</td>
+                        <td>pop</td>
+                         <td>True</td>
+                         </tr>
+
+                          <tr>
+                            <td>38.KAROL G</td>
+                            <td>Si antes tes hubiera conocido</td>
+                            <td>pop</td>
+                            <td>hip-hop</td>
+                            <td>False</td>
+
+                            <tr>
+                              <td>39.Djo</td>
+                              <td>Decide</td>
+                              <td>pop</td>
+                              <td>hip-hop</td>
+                              <td>False</td>
+
+                              <tr>
+                                <td>40.Taylor Swift, Post Malone</td>
+                                <td>THE TORTURED POETS DEPARTMENT</td>
+                                <td>pop</td>
+                                <td>pop</td>
+                                <td>True</td>
+                                </tr>
+                          <td colspan="40">Total Data</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
+
+    <nav class="navbar navbar-expand-lg bg-body-secondary rounded mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Chart A</a>
+            <a class="navbar-brand" href="#">Chart B</a>
+            <a class="navbar-brand" href="#">Chart C</a>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h1 class="display-3">Spotify's Most Popular Songs Analysis</h1>
+            <p class="text-muted">We created bar charts from music charts using a dataset from Kaggle.</p>
+        </header>
+        <section>
+            <h2></h2>
+            <canvas></canvas>
+            <section></section>
+        </section>
+        <article>
+            <h2></h2>
+            <p></p>
+            <pre></pre>
+        </article>
+    </main>
     <h1>Charts</h1>
     <canvas id="Charts1" width="500" height="200"></canvas>
     <script>
@@ -30,15 +410,34 @@ const ctx2 = document.getElementById('chart2');
 new Chart(ctx2, {
     type: 'pie',
     data: {
-        labels: [ 'gangster(Rap)', 'trap', 'essential', 'modern', 'hip_hip_latin', 'classic'
+        labels: [ 'gangster(Rap)', 'trap', 'essential', 'modern', 'hip_hip_latin', 'classic', 'chill', 'funk'
         ],
         datasets: [{
             label: 'Popularity by Genre',
-            data: ['812','389','169','312','1045', '3750']
+            data: ['812','389','169','312','1045', '3750', '10672', '2351']
+        }]
+    }
+});
+</script>
+
+    <h3>Charts</h3>
+    <canvas id="chart3" width="50" height="50"></canvas>
+    <script>
+const ctx3 = document.getElementById('chart3');
+new Chart(ctx3, {
+    type: 'doughnut',
+    data: {
+        labels: [ 'The Long Road Home - The Ultimate John Fogerty / Creedence Collection', 'The Collection', 'Bella Donna (Deluxe Edition)', 'Love, Ella', 'Shapes of Rhythm/Woman Is Sweeter', 'Ultimate Sinatra', 'The Complete Ella And Louis On Verve', 'B. G. In Hi Fi', 'Quiet Kenny', 'Song For My Father', 'Boss Tenor (RVG Remasters / Remastered 2006)', 'Body & Soul', 'Look Out! (Remastered)', 'Tuesday Wonderland', 'Approaching Standards', 'Giant Steps (60th Anniversary Super Deluxe Edition) [2020 Remaster]', 'On Time', 'Gilles Peterson - Magic Peterson Sunshine', 'Piano Book (Deluxe Edition)', 'Für Elise, Bagatelle No. 25 in A Minor, WoO 59', 'Songs from the Arc of Life'
+        ],
+        datasets: [{
+            label: 'By liveness',
+            data: ['0.173', '0.0702', '0.0818', '0.191', '0.224', '0.0575', '0.1', '0.051', '0.11', '0.122', '0.124', '0.179', '0.212', '0.108', '0.106', '0.185', '0.979', '0.0974', '0.102', '0.102', '0.805'
+]
         }]
     }
 });
 </script>
 </p>
 </body>
+
 </html>
