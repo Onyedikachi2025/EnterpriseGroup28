@@ -15,9 +15,7 @@ We obtained our dataset to use for our analysis from Kaggle. It features structu
 
 
 ## Basic Machine Learning
-As part of the spotify playlist dataset analysis report , we conducted a machine learning predicted spotify data table analysis to analyse the predictions that machine learning can make based on the top spotify tracks . The source that we used to carry out this analysis was Sourcetable, a prediction machine learning website which was a reliable tool for creating a prediction table for the spotify data analysis. This table contains dara and the predicted genre based on machine learning about spotify tracks, including the track artist, track album, playlist genre, predicted genre, and whether the predicted genre matches the playlist genre. in total we analysed 40 tracks in the table.The predicted genre matched the playlist genre for 28 tracks, when it did niot match 12 tracks. 
-this indicates that the machine learning model used for genre prediction has a certain level of accurancy . however, there are also instances where it did not corectly predict the genre based on the playlist genre. overall this shows that while machine learning can be useful for predicting music genres, it is mnot always completely accurate and may requirw more data or improved algorithm to improve results. 
-
+As part of the Spotify playslist dataset analysis report, we used a machine learning prediction table to analyse how accurately gneres could be predicted for top Spotify tracks. We used Sourcetable to analyse. The table included the track artist, album, playlist genre, predicted genre, and whether the predicted gebre matched the playlist genre. In total 40 tracks were analysed . The predicted genre matched the playlist genre for 28 tracks, while it did not match for 12. This suggest that the match learning model has a reasonable level of accurancy, but its not always corect. Overall, this shows that machine learning can be useful for predicting music genres, it may require more data to increase accurancy . 
 
 ## Limitations and Ethics
 
