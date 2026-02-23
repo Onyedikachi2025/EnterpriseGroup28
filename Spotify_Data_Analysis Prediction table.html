@@ -1,31 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Group 28 Enterprise Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-</html>
-
-    <nav class="navbar navbar-expand-lg bg-body-secondary rounded mb-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <a class="navbar-brand" href="#">Prediction Table</a>
-            <a class="navbar-brand" href="#">Chart B</a>
-            <a class="navbar-brand" href="#">Chart C</a>
-        </div>
-    </nav>
-    <main>
-        <header>
-            <h1 class="display-3">Spotify's Most Popular Songs Analysis</h1>
-            <p class="text-muted">We created bar charts from music charts using a dataset from Kaggle.</p>
-        </header>
-        <section>
-            <body class="container">
-            
-              <body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpotifyData</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
   <section class="table-wrap">
       <h2 class="subtitle"> Machine Learning Predicted Data Analysis Table</h2>
       
@@ -33,11 +15,13 @@
 
       <label for="description">Description:</label>
       <p class="description">
-       <p> This table presents the predicted duration, tempo and energy time of tracks based on their playlist genre. 
-        The data includes various attributes
+        This table presents the predicted duration, tempo and energy time of tracks based on their playlist genre. 
+        The data includes various attributes such as track artist, track album name, playlist genre, duration, predicted duration, tempo, predicted tempo, energy, predicted energy, and whether the predicted genre matches the playlist genre.
+      </p>
+
+      <p>
         According to the data, the predicted duration, tempo and energy time of tracks can vary significantly based on their playlist genre. For example, tracks in the pop genre tend to have a shorter duration and higher tempo compared to tracks in other genres. 
         Additionally, the predicted energy time of tracks can also vary based on their playlist genre, with some genres having higher energy levels than others.
-       </p>
       <table class="SpotifyData Predicted Analysis Table">
         <thead>
           <tr>
@@ -606,66 +590,4 @@
   </main>
 
 </body>
-        </section>
-        <article>
-            <h2></h2>
-            <p></p>
-            <pre></pre>
-        </article>
-    </main>
-    <h1>Charts</h1>
-    <canvas id="Charts1" width="500" height="200"></canvas>
-    <script>
-        const ctx1 = document.getElementById('Charts1');
-
-        new Chart(ctx1,  {
-            type: 'line',
-            data: { 
-            labels: ['Gaga & Bruno', 'ROSÉ & Bruno', 'Billie Eilish', 'Chappell Roan', 'Gracie Abrams', 'Billie Eilish', 'Oscar & Fuerza', 'Weeknd & Carti', 'Gracie Abrams', 'Sabrina Carpenter', 'JENNIE', 'Addison Rae', 'Sabrina Carpenter', 'Chappell Roan', 'Tyler & Friends', 'Myles Smith', 'Shaboozey', 'Lady Gaga', 'Morgan Wallen', 'Adam Port & Crew', 'Charli xcx & Billie', 'Don Toliver', 'Post Malone & Wallen', 'The Marías', 'LISA', 'Rauw & Bad Bunny', 'Sabrina Carpenter', 'Tate McRae', 'Hozier', 'Gigi Perez'],
-            datasets: [{
-                label: 'TOP 30 BEST SONGS',
-                data: [100, 97, 93, 81, 98, 94, 88, 93, 71, 92, 85, 88, 79, 86, 88, 86, 82, 86, 90, 86, 88, 90, 89, 82, 85, 84, 77, 84, 93, 88]
-            }] 
-        }
-    } );
-    </script>
-    <h2>Charts</h2>
-    <canvas id="chart2" width="50" height="50"></canvas>
-    <script>
-const ctx2 = document.getElementById('chart2');
-new Chart(ctx2, {
-    type: 'pie',
-    data: {
-        labels: [ 'Pop', 'Rock', 'Jazz', 'Classical', 'Hip-Hop', 'Afrobeats', 'Latin', 'Indian', 'Country', 'R&B', 'Electronic', 'Soul', 'Gaming', 'J-Pop', 'Metal', 'Reggae', 'K-Pop','Arabic','Punk','Blues','Folk','Lofi','Brazillian','Turkish','Ambient','Korean','World','Indie'
-        ],
-        datasets: [{
-            label: 'Popularity by Genre',
-            data: ['28575','17531','69','706','14835', '1441', '13853', '635', '211', '3808', '10949','151','8043','788','2578','353','830','3699','3678','3265','2476','143','1018','503','4531','559','287','293']
-        }]
-    }
-});
-</script>
-
-    <h3>Charts</h3>
-    <canvas id="chart3" width="50" height="50"></canvas>
-    <script>
-const ctx3 = document.getElementById('chart3');
-new Chart(ctx3, {
-    type: 'doughnut',
-    data: {
-        labels: [ 'Pop', 'Rock', 'Jazz', 'Classical', 'Hip-Hop', 'Afrobeats', 'Latin', 'Indian', 'Country', 'R&B', 'Electronic', 'Soul', 'Gaming', 'J-Pop', 'Metal', 'Reggae', 'K-Pop','Arabic','Punk','Blues','Folk','Lofi','Brazillian','Turkish','Ambient','Korean','World','Indie'
-        ],
-        datasets: [{
-            label: 'Danceability by Genre',
-            data: [ 232.788,128.113,0.349,2.75,167.068,12.741,136.907,6.136, 1.637,31.856,100.258,1.152,70.926,6.788,15.554,4.4, 8.328,37.838,24.65,28.117,18.707,1.02,11.169,4.52, 32.508,4.552,2.865,2.813
-]
-        }]
-    }
-});
-</script>
-</p>
-</body>
-
 </html>
-
-
