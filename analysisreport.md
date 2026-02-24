@@ -20,6 +20,8 @@ When talking about the mean, anything above 50 (mainly the track popularity) is 
 As part of the Spotify playslist dataset analysis report, we used a machine learning prediction table to analyse how accurately gneres could be predicted for top Spotify tracks. We used Sourcetable to analyse. The table included the track artist, album, playlist genre, predicted genre, and whether the predicted gebre matched the playlist genre. In total 40 tracks were analysed . The predicted genre matched the playlist genre for 28 tracks, while it did not match for 12. This suggest that the match learning model has a reasonable level of accurancy, but its not always corect. Overall, this shows that machine learning can be useful for predicting music genres, it may require more data to increase accurancy . 
 
 ## Limitations and Ethics
+Machine Learning can help predict music genres on Spotify, but it has some limits and ethics concern. It only looks at features like tempo, energy, and dancability , so it can miss a song's meaning or feeling . Small datsets and songs with more than one genre can make predictions wrong. 
+Popular songs may get recommended more , while new or small songs artists get less attention. So I think machine learning is useful but must be used carefully.
 
 
 ## Conclusion
