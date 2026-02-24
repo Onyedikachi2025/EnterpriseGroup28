@@ -43,9 +43,9 @@
                 <strong>EnterpriseGroup28</strong>
             </a>
             <div class="d-flex gap-3">
-                <a class="navbar-brand" href="#summary">Summary</a>
+                <a class="navbar-brand" href="#summary">Overview</a>
                 <a class="navbar-brand" href="#prediction">Prediction Table</a>
-                <a class="navbar-brand" href="#descriptive">Descriptive Stats</a>
+                <a class="navbar-brand" href="#descriptive">Data Clean Summary</a>
                 <a class="navbar-brand" href="#charts">Charts</a>
             </div>
         </div>
@@ -128,31 +128,15 @@
             <h2 class="display-5 fw-bold mb-3">Data Cleaning Summary</h2>
             <p style="color:#1DB954; text-transform:uppercase; font-size:0.8rem; letter-spacing:1px;">A00020993 — Terry Onwubuilo</p>
             <p class="text-secondary">When performing the data cleaning, I used one excel sheet which is the popular music charts data sheet which contains attributes such as liveness, danceability and track popularity. These will be the few ones I will be using for data cleaning. First I will use the Trim command to get rid of any data that is missing. Then I will get the average, min, max and SD for all these attributes. I got rid of URL, Link etc. as it was unnecessary and kept danceability, playlist genre, liveness, track artist, track popularity, duration Ms and track name. I used MAX(), MIN() and SDEV.P() to find the max, min and standard deviation of the dataset.</p>
-            <h3 class="mt-4">Descriptive Statistics</h3>
         </section>
 
     </main>
-    <section id="descriptive" class="container my-5">
-      <h2 class="display-6">Data Cleaning Summary(A00020993 - Terry Onwubuilo)</h2>
-      <p>
-        When performing that data cleaning, I used one excel sheet which is the popular music 
-        charts data sheet which contain attributes such liveness, danceability and track 
-        popularity. These will be the few ones I will be using for data cleaning, first I will 
-        use the Trim command to get rid for any data that is missing. Then I will get the 
-        average, min, max and SD for all these attributes, but first I will explain what I 
-        cleaned (got rid of), I got rid URL, Link etc as it was unnecessary to keep for this 
-        specific dataset and the ones I kept which are danceability, playlist genre, liveness, 
-        track artist, track popularity, duration Ms and track name. So, with all that, we have 
-        a fully cleaned and readable data set primarily based on danceability, genre, liveness, 
-        track popularity and finally I used the MAX() and MIN() along with SDEV.P() to find the 
-        max, min and standard deviation of the dataset.
-      </p>
-
-      <h2 class="display-6">Descriptive Statistics</h2>
-    </section>
+    
     <section id="charts" class="container my-5">
     <h1>Charts</h1>
     <canvas id="Charts1" width="500" height="200"></canvas>
+    <canvas id="chart2" width="500" height="200" class="mt-4"></canvas>
+    <canvas id="chart3" width="500" height="200" class="mt-4"></canvas>
     <script>
         const btn = document.getElementById("backtotop");
         window.addEventListener("scroll", function() { btn.style.display = window.scrollY > 200 ? "block" : "none"; });
