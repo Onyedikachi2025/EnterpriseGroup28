@@ -16,6 +16,11 @@ When talking about the mean, anything above 50 (mainly the track popularity) is 
 ## Visual Analysis
 
 
+### Top 30 Best Songs – Popularity
+![](https://raw.githubusercontent.com/Onyedikaachi2025/EnterpriseGroup28/5d1af2f102d608ce5d6e32d6f88a4d2bb327a29d/Screenshot%202026-02-25%20at%2022.31.20.png)
+This graph shows the popularity of the top 30 songs .The line goes up and down a lot which means some songs are much more popular than others .The high points mean that the song is very popular and the low means that the song is still in the top 30 but not that popular. It shows that only a few songs have a very high popularity, and the rest are lower.
+
+
 ## Basic Machine Learning
 As part of the Spotify playslist dataset analysis report, we used a machine learning prediction table to analyse how accurately gneres could be predicted for top Spotify tracks. We used Sourcetable to analyse. The table included the track artist, album, playlist genre, predicted genre, and whether the predicted gebre matched the playlist genre. In total 40 tracks were analysed . The predicted genre matched the playlist genre for 28 tracks, while it did not match for 12. This suggest that the match learning model has a reasonable level of accurancy, but its not always corect. Overall, this shows that machine learning can be useful for predicting music genres, it may require more data to increase accurancy . 
 
