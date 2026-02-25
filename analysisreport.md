@@ -14,10 +14,11 @@ When talking about the mean, anything above 50 (mainly the track popularity) is 
 
 
 ## Visual Analysis
-
-
 ### Top 30 Best Songs – Popularity
 ![](https://raw.githubusercontent.com/Onyedikaachi2025/EnterpriseGroup28/5d1af2f102d608ce5d6e32d6f88a4d2bb327a29d/Screenshot%202026-02-25%20at%2022.31.20.png)
+
+
+
 This graph shows the popularity of the top 30 songs .The line goes up and down a lot which means some songs are much more popular than others .The high points mean that the song is very popular and the low means that the song is still in the top 30 but not that popular. It shows that only a few songs have a very high popularity, and the rest are lower.
 
 
